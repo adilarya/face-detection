@@ -1,16 +1,13 @@
-# 📸 Histogram of Oriented Gradients (HOG) & Face Detection
+# Histogram of Oriented Gradients (HOG) & Face Detection
 A complete implementation of the Histogram of Oriented Gradients (HOG) descriptor and a template-based face detector using Normalized Cross-Correlation (NCC).
 
-This project includes a full HOG pipeline, face-detection system, and visualization tools. Reference diagrams and algorithm explanations were adapted from computer vision learning materials:
-- Project instructions
-- HOG lecture slides
-- Full implementation source code (p1.py)
+This project includes a full HOG pipeline, face-detection system, and visualization tools. 
 
 ---
 
-## 🚀 Features
+## Features
 
-### ✔️ HOG Descriptor
+### HOG Descriptor
 Implements the full Dalal & Triggs style HOG pipeline:
 - Sobel-based differential filtering
 - Gradient magnitude + unsigned orientation
@@ -18,20 +15,20 @@ Implements the full Dalal & Triggs style HOG pipeline:
 - 8×8 cells, 2×2 blocks, L2-normalized
 - Final descriptor flattening
 
-### ✔️ Face Detection
+### Face Detection
 Sliding-window detector using HOG features + NCC:
 - Extract HOG from a template image
 - Compare with each target window using normalized cross-correlation
 - Threshold detections
 - Perform Non-Maximum Suppression (NMS) using IoU > 0.5
 
-### ✔️ Visualizations
+### Visualizations
 - HOG visualization using line renderings for orientation bins
 - Face detection bounding boxes + confidence scores
 
 ---
 
-## 🖼 Example Outputs
+## Example Outputs
 
 ### HOG Visualization
 (Insert your HOG figure here)
@@ -45,7 +42,7 @@ Sliding-window detector using HOG features + NCC:
 
 ---
 
-## 🧠 Algorithm Overview
+## Algorithm Overview
 
 ### 1. Differential Filtering
 Using 3×3 Sobel filters:
@@ -82,21 +79,7 @@ Then apply thresholding and Non-Maximum Suppression to remove overlapping boxes.
 
 ---
 
-## 📁 Repository Structure
-
-```
-.
-├── p1.py               # Full implementation
-├── images/             # Add your own output images here
-│   ├── hog_output.png
-│   ├── face_detection.png
-├── assets/             # Template/target images (not included)
-├── README.md
-```
-
----
-
-## ▶️ Running the Code
+## Running the Code
 
 ### Install dependencies
 ```
@@ -111,16 +94,3 @@ python p1.py
 Outputs:
 - HOG visualization of cameraman.tif
 - Face detection bounding boxes on the target image
-
----
-
-## 📚 References
-- Project specification (algorithms, equations, and examples)
-- HOG lecture slides
-- Full implementation code (p1.py)
-- Dalal & Triggs — Histograms of Oriented Gradients for Human Detection (CVPR 2005)
-
----
-
-## ✨ Author
-Adil Arya
