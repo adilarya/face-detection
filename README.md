@@ -31,12 +31,10 @@ Sliding-window detector using HOG features + NCC:
 ## Example Outputs
 
 ### HOG Visualization
-(Insert your HOG figure here)
 
 ![HOG Visualization](Figure_1.png)
 
 ### Face Detection Results
-(Insert your detection figure here)
 
 ![Face Detection](Figure_2.png)
 
